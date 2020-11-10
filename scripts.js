@@ -31,7 +31,7 @@ const gameManager = gameManagerCreator();
 
 const board = document.querySelector('#board')
 
-gameBoard.forEach((obj) => {
+gameBoard.forEach(() => {
     let squares = document.createElement('div')
     board.appendChild(squares)
     squares.classList.add('squares')
