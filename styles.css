@@ -5,18 +5,20 @@
 
     .squares {
         border: solid red;
-        width: 100px;
-        height: 100px;
+        width: 8rem;
+        height: 8rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 1rem;
     }
 
     .squares:hover{
         cursor: pointer;
-        background-color: crimson;
+        color: #737373;
     }
+
 
     #board {
         display: grid;
