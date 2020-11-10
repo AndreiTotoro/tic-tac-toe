@@ -11,9 +11,9 @@ const gameManagerCreator = (score1 = 0, score2 = 0, round = 1) => {
 }
 
 
-const player1 = playerFactory(name, marker)
+const player1 = playerFactory("Andrei", "X")
 
-const player2 = playerFactory(name, marker)
+const player2 = playerFactory("Bob", "O")
 
 const gameBoard = [
     squareCreator(1),
@@ -31,9 +31,12 @@ const gameManager = gameManagerCreator();
 
 const board = document.querySelector('#board')
 
-gameBoard.forEach(obj => {
-    
-}
+gameBoard.forEach((obj) => {
+    let squares = document.createElement('div')
+    board.appendChild(squares)
+    squares.classList.add('squares')
+    squares.textContent = "X"
+})
 
 
 
